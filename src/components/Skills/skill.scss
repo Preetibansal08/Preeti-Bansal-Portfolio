@@ -1,0 +1,245 @@
+@import "../../App.scss";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .skills {
+    margin-top: 0;
+    background-image: url(../../assets/skills/solar.png); 
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    position: relative; 
+
+    @include mobile{
+      margin-top:250%;
+      background-size: contain;
+      background-repeat: none;
+    }
+
+    @include tablet{
+      margin-top:2%;
+      background-size: contain;
+      background-repeat: none;
+    }
+    @include desktop{
+      margin-top:53rem;
+      background-size: contain;
+      background-repeat: none;
+    }
+
+
+
+    .stars{
+      background-image: url("../../assets/skills/stars.png");
+      background-size: cover;
+      background-position: bottom;
+      width:100%;
+      height: 100%;
+  }
+  }
+  
+  .solar-logo {
+    position: absolute;
+
+      
+    .solar-img {
+        height: 100px;
+        width: auto;
+        position: relative;
+        z-index:3;
+
+        @include mobile{
+          height: 60px;
+          width:auto;
+        }
+        @include tablet{
+          height: 6.5rem;
+          width:auto;
+        }
+        @include desktop{
+          height: 5rem;
+          width:auto;
+        }
+
+        &:hover{
+          scale:1.1;
+        }
+      }
+  
+    &.gsap {
+      left: 5%;
+      top: 25%;
+    }
+  
+    &.cpp {
+      left: 75%;
+      top: 40%;
+    }
+  
+    &.html {
+      left: 45%;
+      top: 5%;
+    }
+  
+    &.python {
+      left: 28%;
+      top: 63%;
+    }
+  
+    &.github {
+      left: 23%;
+      top: 85%;
+
+      @include mobile{
+        top:75%;
+        left:15%;
+      }
+      @include desktop{
+        top:5%;
+        left:15%;
+      }
+    }
+  
+    &.js {
+      left: 45%;
+      top: 30%;
+    }
+  
+    &.bootstrap {
+      left: 75%;
+      top: 10%;
+    }
+  
+    &.react {
+      left: 16%;
+      top: 45%;
+    }
+  
+    &.tailwind {
+      left: 65%;
+      top: 60%;
+    }
+  
+    &.sql {
+      left: 30%;
+      top: 35%;
+
+      @include mobile{
+        top:90%;
+      }
+      @include tablet{
+        top:90%;
+      }
+      @include desktop{
+        top:35%;
+      }
+    }
+  
+    &.mysql {
+      left: 60%;
+      top: 20%;
+    }
+  
+    &.flask {
+      left: 80%;
+      top: 80%;
+      @include mobile{
+        top:75%;
+      }
+      @include tablet{
+        top:75%;
+      }
+    }
+  
+    &.mern {
+      left: 40%;
+      top: 65%;
+
+      @include mobile{
+        left:30%;
+        top:45%;
+      }
+      @include desktop{
+        left:40%;
+        top:70%;
+      }
+    }
+  
+    &.numpy {
+      left: 60%;
+      top: 40%;
+
+      @include mobile{
+        left:20%;
+        top:10%;
+      }
+    }
+  
+    &.git {
+      left: 60%;
+      top: 85%;
+
+      @include desktop{
+        left:10%;
+        top:75%;
+      }
+    }
+
+  
+    &.mern .solar-img {
+      height: 200px;
+
+      @include mobile{
+        height:100px;
+      }
+      
+      @include desktop{
+        height:10rem;
+      }
+    }
+    &.java .solar-img {
+        height: 150px;
+        @include mobile{
+          height:100px;
+        }
+        @include tablet{
+          height:9rem;
+        }
+      }
+      &.tailwind .solar-img {
+        height: 150px;
+        @include mobile{
+          height:90px;
+        }
+        @include tablet{
+          height:9rem;
+        }
+        @include desktop{
+          height:7rem;
+        }
+      }
+      &.bootstrap .solar-img {
+        height: 120px;
+        @include mobile{
+          height:100px;
+        }
+        @include tablet{
+          height:8rem;
+        }
+        @include desktop{
+          height:6rem;
+        }
+      }
+    
+  }
+  

@@ -1,0 +1,141 @@
+@import "../../App.scss";
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    @include mobile{
+      overflow-x: hidden;
+    }
+    @include tablet{
+      overflow-x: hidden;
+    }
+    @include desktop{
+      overflow-x: hidden;
+    }
+    
+  
+  }
+
+.navbar{
+    height:100px;
+    background-size: cover;
+    width:100vw;
+    z-index:18;
+
+
+   .wrapper{
+    max-width:1366px;
+    width:100%;
+    margin:auto;
+    display:flex;
+    float: right;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+   }
+
+     .social {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            gap: 70px;
+            z-index:99;
+
+            @include mobile{
+              flex-direction: row;
+              justify-content: space-between;
+              gap:30px;
+              align-items: center;
+              margin-top:50px;
+            }
+
+            @include tablet{
+              flex-direction: row;
+              justify-content: space-evenly;
+              gap:6rem;
+              align-items: center;
+              margin-top:3rem;
+            }
+
+            @include desktop{
+              flex-direction: row;
+              justify-content: space-evenly;
+              gap:6rem;
+              align-items: center;
+              margin-top:2rem;
+            }
+ 
+
+            .socialMail{
+              position: absolute;
+              top:2%;
+              left:88%;
+
+              @include mobile{
+                position:inherit;
+                margin-left: 100px;
+
+              }
+              
+              @include tablet{
+                position:inherit;
+                margin-left: 15rem;
+              }
+              @include desktop{
+                position:inherit;
+                margin-left: 20rem;
+              }
+      
+            }
+
+            .socialGithub{
+              position: absolute;
+              top:13%;
+              left:89%;
+              z-index:100;
+              @include mobile{
+                position:inherit;
+              }
+              @include desktop{
+                position:inherit;
+              }
+            }
+
+            .socialLinkedin{
+              position: absolute;
+              top:18%;
+              left:95%;
+              z-index:100;
+              @include mobile{
+                position:inherit;
+              }
+              @include desktop{
+                position:inherit;
+              }
+            }
+
+            img {
+                width: 50px;
+                @include mobile{
+                  width:35px;
+                }
+                @include mobile{
+                  width:35px;
+                }
+            
+            }
+        }
+
+   .cattyy{
+    margin-left: auto;
+    padding-right: 20px;
+    width:120px;
+    z-index:19;
+    cursor:pointer;
+   }
+
+
+}
