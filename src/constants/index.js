@@ -83,6 +83,7 @@ export const experiences = [
 export const projects = [
   {
     name: "SensAI",
+    subheading : "AI Carrer Coach",
     description:
       "SensAI is an AI-powered career platform that begins by offering deep Industry Insights—helping you identify the most relevant tech stacks to learn based on your role, location, and experience level. From React and Next.js to Docker, Prisma, and AWS, it tailors a growth roadmap using real-time job market trends. Alongside, SensAI provides a smart resume builder, a personalized cover letter generator, and an adaptive interview preparation system—all crafted to align with your skills and industry demands.",
     tags: [
@@ -92,9 +93,11 @@ export const projects = [
       { name: "Prisma", color: "yellow-text-gradient" },
       { name: "Shadcn UI", color: "orange-text-gradient" }
     ],
-    image: sensai, // Replace with your actual image reference
+    image: sensai, 
     source_code_link: "https://github.com/preetibansal08/SensAI"
-  }
+  },
+  
+  
   
   
 ];

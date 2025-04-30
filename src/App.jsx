@@ -5,7 +5,8 @@ import { About, Contact, Experience, Hero, StarsCanvas, Works } from './componen
 import Parallax from './components/parallax/parallax';
 import Skill from './components/Skills/skill';
 import Navbar from "./components/Navbar/Navbar";
-import Skills from './components/Skills';
+import Footer from './components/Footer';
+
 
 
 const App = () => {
@@ -18,8 +19,11 @@ const App = () => {
     >
       <div className="relative z-0 bg-primary">
         <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
+          
+          <section id="Home">
+          <Hero/>
           <Navbar />
-          <section id="Home"><Hero/></section>
+          </section>
         </div>
          <section  className="w-full h-[100vh]">
          <Parallax content="An Insight into My World" type="about" />
@@ -35,16 +39,15 @@ const App = () => {
          <Parallax content="Skills" type="skills" />
         </section>
         <section id="Skills"><Skill/></section>
-        
-        
-     
         <section id="Projects"><Works /></section>
         
         <div className="relative z-0">
           <section id="Contact"><Contact /></section>
           <StarsCanvas />
         </div>
+        <Footer />
       </div>
+      
     </BrowserRouter>
   );
 };
